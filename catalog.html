@@ -39,7 +39,7 @@
       </a>
     </header>
     <main class="catalog">
-          <section class="checkbox-radiobutton">
+          <section class="filters">
             <h1 class="checkbox-title">Гостиницы Седоны</h1>
             <ul class="breadcrumbs-list">
               <li class="breadcrumbs-item">
@@ -51,19 +51,19 @@
                 <a href="#">Гостиницы</a>
               </li>
             </ul>
-            <form action="hotels">
+            <form action="https://echo.htmlacademy.ru/">
 
               <h3 class="title-set">Инфраструктура:</h3>
 
               <ul class="checkbox-set">
                 <li class="checkbox-list">
-                  <p><input type="checkbox" value="pool" checked>Бассейн</p>
+                  <input type="checkbox" value="pool" checked>Бассейн
                 </li>
                 <li class="checkbox-list">
-                  <p><input type="checkbox" value="parking" checked>Парковка</p>
+                  <input type="checkbox" value="parking" checked>Парковка
                 </li>
                 <li class="checkbox-list">
-                  <p><input type="checkbox" value="wi-fi">Wi-Fi</p>
+                  <input type="checkbox" value="wi-fi">Wi-Fi
                 </li>
               </ul>
 
@@ -71,17 +71,17 @@
 
               <ul class="radiobutton-set">
                 <li class="radio-list">
-                  <p><input type="radio" name="radio" value="hotel">Гостиница</p>
+                  <input type="radio" name="radio" value="hotel">Гостиница
                 </li>
                 <li class="radio-list">
-                  <p><input type="radio" name="radio" value="motel" checked>Мотель</p>
+                  <input type="radio" name="radio" value="motel" checked>Мотель
                 </li>
                 <li class="radio-list">
-                  <p><input type="radio" name="radio" value="apartment">Апартаменты</p>
+                  <input type="radio" name="radio" value="apartment">Апартаменты
                 </li>
               </ul>
               
-              <h3 class="value-title">Стоимость, ₽:</h3>
+              <h3 class="cost-title">Стоимость, ₽:</h3>
               <label class="vlaue-filter">
                 <input type="text" name="min-value">от
               </label>
@@ -103,13 +103,13 @@
             </form>
           </section>  
 
-            <form class="sorting">
+            <section class="sorting">
               <h2 class="visually-hidden">Сортировка</h2>
               <span class="sorting-sum">Найдено гостиниц: 38</span>
                 <select name="sorting">
-                  <option value="sorting-1">Сначала дешевые</option>
-                  <option value="sorting-2">Сначала дорогие</option>
-                  <option value="sorting-3">Популярные</option>
+                  <option value="low-cost">Сначала дешевые</option>
+                  <option value="costly">Сначала дорогие</option>
+                  <option value="popular">Популярные</option>
                 </select>
               <ul class="icon-list">
                 <li class="icon-item">
@@ -124,12 +124,12 @@
                 </li>
                 <li class="icon-item">
                   <a href="#">
-                    <span class="icon"></span>
+                    
                   </a>
                 </li>
               </ul>
-            </form>
-            <section class="hotel-card">  
+            </section>
+            <section class="hotel-cards">  
               <ul class="all-card">
                 <li class="item-card">
                   <img src="#" alt="">
@@ -138,7 +138,7 @@
                   <p class="">ОТ 3500 Р.</p>
                   <button class="">Подробнее</button>
                   <button class="">Избранное</button>
-                  <span class="rank">Рейтинг: 8,5</span>
+                  <span class="rating">Рейтинг: 8,5</span>
                 </li>
                 <li class="item-card">
                   <img src="#" alt="">
@@ -147,7 +147,7 @@
                   <p class="">ОТ 3000 Р.</p>
                   <button class="">Подробнее</button>
                   <button class="">Избранное</button>
-                  <span class="rank">Рейтинг: 8,9</span>
+                  <span class="rating">Рейтинг: 8,9</span>
                 </li>
                 <li class="item-card">
                   <img src="#" alt="">
@@ -156,7 +156,7 @@
                   <p class="">От 2000 ₽.</p>
                   <button class="">Подробнее</button>
                   <button class="">Избранное</button>
-                  <span class="rank">Рейтинг: 9,2</span>
+                  <span class="rating">Рейтинг: 9,2</span>
                 </li>
                 <li class="item-card">
                   <img src="#" alt="">
@@ -165,7 +165,7 @@
                   <p class="">ОТ 3000 Р.</p>
                   <button class="">Подробнее</button>
                   <button class="">Избранное</button>
-                  <span class="rank">Рейтинг: 9,2</span>
+                  <span class="rating">Рейтинг: 9,2</span>
                 </li>
               </ul>
               <button type="button">Загрузить еще</button>
@@ -208,10 +208,10 @@
               <p class="useful-information">Только полезная информация и никакого спама, честное бойскаутское!</p>
             </div>
       
-            <form class="name-field" id="subscribe">
-              <input type="email" form="subscribe">
-              <button type="submit" form="subscribe">Подписаться</button>
+            <form class="subscription-form" id="subscribe">
+              <input type="email">
             </form>
+            <button type="submit" form="subscribe">Подписаться</button>
           </section>
 
     </main>
