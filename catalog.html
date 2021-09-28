@@ -9,7 +9,7 @@
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Главная</a>
+            <a class="navigation-link" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">О Седоне</a>
@@ -40,7 +40,7 @@
     </header>
     <main class="catalog">
           <section class="filters">
-            <h1 class="checkbox-title">Гостиницы Седоны</h1>
+            <h1 class="filters-title">Гостиницы Седоны</h1>
             <ul class="breadcrumbs-list">
               <li class="breadcrumbs-item">
                 <a href="#">
@@ -71,21 +71,21 @@
 
               <ul class="radiobutton-set">
                 <li class="radio-list">
-                  <input type="radio" name="radio" value="hotel">Гостиница
+                  <input type="radio" name="hotel" value="hotel">Гостиница
                 </li>
                 <li class="radio-list">
-                  <input type="radio" name="radio" value="motel" checked>Мотель
+                  <input type="radio" name="motel" value="motel" checked>Мотель
                 </li>
                 <li class="radio-list">
-                  <input type="radio" name="radio" value="apartment">Апартаменты
+                  <input type="radio" name="apartment" value="apartment">Апартаменты
                 </li>
               </ul>
               
               <h3 class="cost-title">Стоимость, ₽:</h3>
-              <label class="vlaue-filter">
+              <label class="value-filter">
                 <input type="text" name="min-value">от
               </label>
-              <label class="vlaue-filter">
+              <label class="value-filter">
                 <input type="text" name="max-value">до
               </label>
               <button class="toggle-min" type="button">
@@ -105,26 +105,26 @@
 
             <section class="sorting">
               <h2 class="visually-hidden">Сортировка</h2>
-              <span class="sorting-sum">Найдено гостиниц: 38</span>
+              <span class="sorting-hotels">Найдено гостиниц: 38</span>
                 <select name="sorting">
                   <option value="low-cost">Сначала дешевые</option>
                   <option value="costly">Сначала дорогие</option>
                   <option value="popular">Популярные</option>
                 </select>
-              <ul class="icon-list">
-                <li class="icon-item">
+              <ul class="position-cards">
+                <li class="position-item">
                   <a href="#">
-                    <span class="icon"></span>
+                    <span class="icon-grid"></span>
                   </a>
                 </li>
-                <li class="icon-item">
+                <li class="position-item">
                   <a href="#">
-                    <span class="icon"></span>
+                    <span class="icon-block"></span>
                   </a>
                 </li>
-                <li class="icon-item">
+                <li class="position-item">
                   <a href="#">
-                    
+                    <span class="icon-column"></span>
                   </a>
                 </li>
               </ul>
@@ -208,10 +208,11 @@
               <p class="useful-information">Только полезная информация и никакого спама, честное бойскаутское!</p>
             </div>
       
-            <form class="subscription-form" id="subscribe">
-              <input type="email">
+            <form class="subscription-form" action="">
+              <input type="email"> 
+              <button type="submit">Подписаться</button>
             </form>
-            <button type="submit" form="subscribe">Подписаться</button>
+           
           </section>
 
     </main>
