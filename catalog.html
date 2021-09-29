@@ -57,13 +57,13 @@
 
               <ul class="checkbox-set">
                 <li class="checkbox-list">
-                  <input type="checkbox" value="pool" checked>Бассейн
+                  <input type="checkbox" name="type-of-housing" value="pool">Бассейн
                 </li>
                 <li class="checkbox-list">
-                  <input type="checkbox" value="parking" checked>Парковка
+                  <input type="checkbox" name="type-of-housing" value="parking">Парковка
                 </li>
                 <li class="checkbox-list">
-                  <input type="checkbox" value="wi-fi">Wi-Fi
+                  <input type="checkbox" name="type-of-housing" value="wi-fi">Wi-Fi
                 </li>
               </ul>
 
@@ -71,13 +71,13 @@
 
               <ul class="radiobutton-set">
                 <li class="radio-list">
-                  <input type="radio" name="hotel" value="hotel">Гостиница
+                  <input type="radio" name="infrastructure" value="hotel">Гостиница
                 </li>
                 <li class="radio-list">
-                  <input type="radio" name="motel" value="motel" checked>Мотель
+                  <input type="radio" name="infrastructure" value="motel" >Мотель
                 </li>
                 <li class="radio-list">
-                  <input type="radio" name="apartment" value="apartment">Апартаменты
+                  <input type="radio" name="infrastructure" value="apartment">Апартаменты
                 </li>
               </ul>
               
@@ -94,7 +94,7 @@
               <button class="toggle-max" type="button">
                 <span class="value">Максимальная цена</span>
               </button>
-              <button class="accept" type="button">
+              <button class="accept" type="submit">
                 Применить
               </button>
               <button class="reset" type="reset">
@@ -208,8 +208,8 @@
               <p class="useful-information">Только полезная информация и никакого спама, честное бойскаутское!</p>
             </div>
       
-            <form class="subscription-form" action="">
-              <input type="email"> 
+            <form class="subscription-form" action="https://echo.htmlacademy.ru/">
+              <input type="email" name="email"> 
               <button type="submit">Подписаться</button>
             </form>
            
