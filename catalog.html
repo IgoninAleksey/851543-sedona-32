@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>HTML Academy: Каталог</title>
   </head>
   <body>
@@ -29,8 +30,8 @@
                 <span class="visually-hidden">Избранное</span>
               </a>
             </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">Хочу сюда!</a>
+            <li class="navigation-button">
+              <a href="#">Хочу сюда!</a>
             </li>
           </ul>
           <a class="logo-link" href="#">
@@ -84,10 +85,10 @@
               
               <h3 class="cost-title">Стоимость, ₽:</h3>
               <label class="value-filter">
-                <input type="text" name="min-value">от
+                <input type="text" name="min-value" placeholder="От">
               </label>
               <label class="value-filter">
-                <input type="text" name="max-value">до
+                <input type="text" name="max-value" placeholder="До">
               </label>
               <button class="toggle-min" type="button">
                 <span class="value">Минимальная цена</span>
@@ -107,7 +108,7 @@
             <section class="sorting">
               <h2 class="visually-hidden">Сортировка</h2>
               <span class="sorting-hotels">Найдено гостиниц: 38</span>
-                <select name="sorting">
+                <select class="sorting-content" name="sorting">
                   <option value="low-cost">Сначала дешевые</option>
                   <option value="costly">Сначала дорогие</option>
                   <option value="popular">Популярные</option>
@@ -137,8 +138,8 @@
                   <h3 class="hotel-title">Amara Resort & Spa</h3>
                   <p class="">Гостиница</p>
                   <p class="">ОТ 3500 Р.</p>
-                  <button class="">Подробнее</button>
-                  <button class="">Избранное</button>
+                  <button class="more-detailed">Подробнее</button>
+                  <button class="favourites">Избранное</button>
                   <img src="img/star5.svg" alt="Пять звезд" width="91" height="17">
                   <span class="rating">Рейтинг: 8,5</span>
                 </li>
@@ -147,8 +148,8 @@
                   <h3 class="hotel-title">Desert Quail Inn</h3>
                   <p class="">Мотель</p>
                   <p class="">ОТ 3000 Р.</p>
-                  <button class="">Подробнее</button>
-                  <button class="">Избранное</button>
+                  <button class="more-detailed">Подробнее</button>
+                  <button class="favourites">Избранное</button>
                   <img src="img/star3.svg" alt="Три звезды" width="68" height="17">
                   <span class="rating">Рейтинг: 8,9</span>
                 </li>
@@ -157,23 +158,23 @@
                   <h3 class="hotel-title">Villas at Poco Diablo</h3>
                   <p class="">Апартаменты</p>
                   <p class="">От 2000 ₽.</p>
-                  <button class="">Подробнее</button>
-                  <button class="">Избранное</button>
+                  <button class="more-detailed">Подробнее</button>
+                  <button class="favourites">Избранное</button>
                   <img src="img/star2.svg" alt="Две звезды" width="43" height="17">
                   <span class="rating">Рейтинг: 9,2</span>
                 </li>
                 <li class="item-card">
-                  <img src="img/greentree.png" alt="Гостиница" width="180" height="120">
+                  <img src="img/greentree.jpg" alt="Гостиница" width="180" height="120">
                   <h3 class="hotel-title">GreenTree Inn</h3>
                   <p class="">Гостиница</p>
                   <p class="">ОТ 3000 Р.</p>
-                  <button class="">Подробнее</button>
-                  <button class="">Избранное</button>
+                  <button class="more-detailed">Подробнее</button>
+                  <button class="favourites">Избранное</button>
                   <img src="img/star2.svg" alt="Две звезды" width="43" height="17">
                   <span class="rating">Рейтинг: 9,2</span>
                 </li>
               </ul>
-              <button type="button">Загрузить еще</button>
+              <button class="download-more" type="button">Загрузить еще</button>
             </section>
 
             <section class="pagination">
@@ -213,9 +214,9 @@
               <p class="useful-information">Только полезная информация и никакого спама, честное бойскаутское!</p>
             </div>
       
-            <form class="subscription-form" action="https://echo.htmlacademy.ru/">
-              <input type="email" name="email"> 
-              <button type="submit">Подписаться</button>
+            <form class="name-field" id="subscribe">
+              <input class="email" type="email" form="subscribe" placeholder="Ваш e-mail">
+              <button class="subscribe" type="submit" form="subscribe">Подписаться</button>
             </form>
            
           </section>

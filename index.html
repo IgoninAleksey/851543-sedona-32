@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>HTML Academy: Седона</title>
   </head>
   <body>
@@ -30,8 +31,8 @@
                 <span class="visually-hidden">Избранное</span>
               </a>
             </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">Хочу сюда!</a>
+            <li class="navigation-button">
+              <a href="#">Хочу сюда!</a>
             </li>
           </ul>
           <a class="logo-link" href="index.html">
@@ -55,11 +56,8 @@
 
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
-        
-          
-
         <ul class="advantages-list">
-          <li>
+          <li class="advantages-item">
             <img src="img/town.jpg" alt="Настоящий городок" width="800" height="384">
           </li>
           <li class="advantage-blue">
@@ -67,15 +65,15 @@
             <p class="advantage-number">- №1 -</p>
             <p class="advantage-description">Седона - не аттракцион для туристов, там течет своя жизнь</p>
           </li>
-          <li class="advantages-list">
+          <li class="advantages-item-color">
             <h4>Жильё</h4>
             <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
-          <li class="advantages-list">
+          <li class="advantages-item">
             <h4>Еда</h4>
             <p>Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
           </li>
-          <li class="advantages-list">
+          <li class="advantages-item-color">
             <h4>Сувениры</h4>
             <p>Не только китайского, но и настоящего местного производства!</p>
           </li>
@@ -92,7 +90,7 @@
               <p>- №3 -</p>
               <p>Все достопримечательности находятся очень близко</p>
             </li>
-            <li class="more-advantage">
+            <li class="more-advantage-color">
               <h3>Красивая дорога</h3>
               <p>- №4 -</p>
               <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
@@ -111,7 +109,7 @@
         <p class="search-date">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <div class="form-header">
           <a href="#" class="hotel-button">
-            <h2 class="form-title">Поиск гостиницы в седоне</h2>
+            Поиск гостиницы в седоне
           </a>
         </div>
       </section>
@@ -124,8 +122,8 @@
         </div>
 
         <form class="name-field" id="subscribe">
-          <input type="email" form="subscribe">
-          <button type="submit" form="subscribe">Подписаться</button>
+          <input class="email" type="email" form="subscribe" placeholder="Ваш e-mail">
+          <button class="subscribe" type="submit" form="subscribe">Подписаться</button>
         </form>
 
       </section>
