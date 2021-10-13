@@ -111,11 +111,17 @@ body {
     color:#333333;
 }
 
+/* advantages */
+
 .advantages {
     display: flex;
     flex-direction: column;
     width: 1200px;
     margin: auto;
+}
+
+.advantages-list:nth-child(3) {
+    order: 1;
 }
 
 .advantage-text {
