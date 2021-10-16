@@ -343,6 +343,7 @@ body {
 .checkbox-set {
     display: block;
     width: 150px;
+    list-style: none;
 }
 
 .title-set, .cost-title {
@@ -355,6 +356,7 @@ body {
 .radio-list {
     font-size: 18px;
     line-height: 23px;
+    list-style: none;
 }
 
 .container-cost {
@@ -436,6 +438,11 @@ body {
     color: #333333;
     font-size: 18px;
     line-height: 23px;
+}
+
+.layouts-list {
+    display: flex;
+    list-style: none;
 }
 
 .item-card {
@@ -549,6 +556,7 @@ body {
 }
 
 .pagination-list ul {
+    list-style: none;
     display: flex
 }
 
