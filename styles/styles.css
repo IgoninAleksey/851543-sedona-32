@@ -211,17 +211,20 @@ body {
 
 .subscription {
     text-align: center;
-    background-image: url(../img/subscription.jpg);
-    background-color: #000000;
     background-size: 100% auto;
     background-repeat: no-repeat;
-    color: #FFFFFF;
 }
 
-.subscription-catalog {
-    text-align: center;
-}
+        #index {
+            background-image: url(../img/subscription.jpg);
+            color: #FFFFFF;
+        }
 
+        #catalog {
+            background-color: #FFFFFF;
+            color: #000000;
+        }
+        
 .subscribe-mailing {
     font-weight: 700;
     font-size: 30px;
@@ -280,7 +283,16 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
 }
+
+        #footer-index {
+            width: 1200px;
+        }
+
+        #footer-catalog {
+            width: 1060px;
+        }
 
 .contacts-phone {
     font-size: 40px;
@@ -292,7 +304,7 @@ body {
 /*catalog*/
 
 /*main*/
-.filters-background {
+.filters {
     display: flex;
     flex-wrap: wrap;
     background-image: url("../img/catalog-background 1.jpg");
@@ -302,7 +314,7 @@ body {
     color: #FFFFFF;
 }
 
-.filters {
+.filters-container {
     width: 1060px;
     margin: 0 auto;
 }
@@ -331,12 +343,12 @@ body {
     line-height: 21px;
 }
 
-.settings {
+.checkbox-form {
     display: flex;
     flex-wrap: wrap;
 }
 
-.container-checkbox {
+.checkbox-container {
     margin-right: 70px;
 }
 
@@ -353,13 +365,13 @@ body {
     line-height: 26px;
 }
 
-.radio-list {
+.radio-item {
     font-size: 18px;
     line-height: 23px;
     list-style: none;
 }
 
-.container-cost {
+.cost-container {
     display: flex;
     width: 530px;
     margin-left:auto;
@@ -406,7 +418,7 @@ body {
     line-height: 23px;
 }
 
-.container-catalog {
+.catalog-container {
     width: 1060px;
     margin: 0 auto;
 }
@@ -447,9 +459,16 @@ body {
 
 .item-card {
     display: flex;
-    height: 125px;
     width: 100%;
+    border-bottom: 1px solid #333333;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
     
+}
+
+.all-card {
+    padding: 0;
+    list-style: none;
 }
 
 .item-card p {
@@ -458,11 +477,6 @@ body {
     color: #333333;
 }
 
-.line {
-    color: #E5E5E5;
-    size: 1px;
-    margin: 30px 0px 30px 0px;
-}
 
 .grid-1 {
     display: flex;
@@ -536,8 +550,11 @@ body {
 }
 
 .download-button {
-    width: 630px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
     margin: 0 auto;
+    border-bottom:1px solid #333333;
 }
 
 .download-more {
@@ -549,13 +566,14 @@ body {
     font-size: 20px;
     line-height: 26px;
     color: #FFFFFF;
+    margin-bottom: 30px;
 }
 
-.pagination-list {
+.pagination {
     display: flex;
 }
 
-.pagination-list ul {
+.pagination-list {
     list-style: none;
     display: flex
 }

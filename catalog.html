@@ -43,8 +43,8 @@
       
     </header>
     <main class="catalog">
-          <section class="filters-background">
-            <div class="filters">
+          <section class="filters">
+            <div class="filters-container">
               <h1 class="filters-title">Гостиницы Седоны</h1>
               <ul class="breadcrumbs-list">
                 <li class="breadcrumbs-item">
@@ -56,36 +56,36 @@
                   <a href="#">Гостиницы</a>
                 </li>
               </ul>
-              <form class="settings" action="https://echo.htmlacademy.ru/">
-                <div class="container-checkbox">
+              <form class="checkbox-form" action="https://echo.htmlacademy.ru/">
+                <div class="checkbox-container">
                   <h3 class="title-set">Инфраструктура:</h3>
                   <ul class="checkbox-set">
-                    <li class="checkbox-list">
+                    <li class="checkbox-item">
                       <input type="checkbox" name="type-of-housing" value="pool">Бассейн
                     </li>
-                    <li class="checkbox-list">
+                    <li class="checkbox-item">
                       <input type="checkbox" name="type-of-housing" value="parking">Парковка
                     </li>
-                    <li class="checkbox-list">
+                    <li class="checkbox-item">
                       <input type="checkbox" name="type-of-housing" value="wi-fi">Wi-Fi
                     </li>
                   </ul>
                 </div>
-                <div class="container-radio">
+                <div class="radio-container">
                   <h3 class="title-set">Тип жилья:</h3>
                   <ul class="radiobutton-set">
-                    <li class="radio-list">
+                    <li class="radio-item">
                       <input type="radio" name="infrastructure" value="hotel">Гостиница
                     </li>
-                    <li class="radio-list">
+                    <li class="radio-item">
                       <input type="radio" name="infrastructure" value="motel" >Мотель
                     </li>
-                    <li class="radio-list">
+                    <li class="radio-item">
                       <input type="radio" name="infrastructure" value="apartment">Апартаменты
                     </li>
                   </ul>
                 </div>
-                <div class="container-cost">
+                <div class="cost-container">
                   <div>
                     <h3 class="cost-title">Стоимость, ₽:</h3>
                     <label class="value-filter">
@@ -113,7 +113,7 @@
               </form>
             </div>
           </section>  
-          <div class="container-catalog">
+          <div class="catalog-container">
             <section class="sorting">
               <h2 class="visually-hidden">Сортировка</h2>
               <span class="sorting-hotels">Найдено гостиниц: 38</span>
@@ -143,7 +143,7 @@
 
             <section class="hotel-cards">  
               <ul class="all-card">
-                <hr class="line">
+                
                 <li class="item-card">
                   <img src="img/amara.jpg" alt="Гостиница" width="180" height="120">
                   <div class="grid-1">
@@ -156,11 +156,17 @@
                     <button class="favourites">Избранное</button>
                   </div>
                   <div class="grid-3">
-                    <img src="img/star5.svg" alt="Пять звезд" width="91" height="17">
+                    <div>
+                      <img src="img/star.svg" alt="Рейтинг 5 из 5" width="19" height="17">
+                      <img src="img/star.svg" alt="" width="19" height="17">
+                      <img src="img/star.svg" alt="" width="19" height="17">
+                      <img src="img/star.svg" alt="" width="19" height="17">
+                      <img src="img/star.svg" alt="" width="19" height="17">
+                    </div>
                     <span class="rating">Рейтинг: 8,5</span>
                   </div>
                 </li>
-                <hr class="line">
+                
                 <li class="item-card">
                   <img src="img/desert.jpg" alt="Мотель" width="180" height="120">
                   <div class="grid-1">
@@ -173,11 +179,15 @@
                     <button class="favourites">Избранное</button>
                   </div>
                   <div class="grid-3">
-                    <img src="img/star3.svg" alt="Три звезды" width="68" height="17">
+                    <div>
+                      <img src="img/star.svg" alt="Рейтинг 3 из 5" width="19" height="17">
+                      <img src="img/star.svg" alt="" width="19" height="17">
+                      <img src="img/star.svg" alt="" width="19" height="17">
+                    </div>
                     <span class="rating">Рейтинг: 8,9</span>
                   </div>
                 </li>
-                <hr class="line">
+                
                 <li class="item-card">
                   <img src="img/villas.jpg" alt="Апартаменты" width="180" height="120">
                   <div class="grid-1">
@@ -190,11 +200,14 @@
                     <button class="favourites">Избранное</button>
                   </div>
                   <div class="grid-3">
-                    <img src="img/star2.svg" alt="Две звезды" width="43" height="17">
+                    <div>
+                      <img src="img/star.svg" alt="Рейтинг 2 из 5" width="19" height="17">
+                      <img src="img/star.svg" alt="" width="19" height="17">
+                    </div>
                     <span class="rating">Рейтинг: 9,2</span>
                   </div>
                 </li>
-                <hr class="line">
+  
                 <li class="item-card">
                   <img src="img/greentree.jpg" alt="Гостиница" width="180" height="120">
                   <div class="grid-1">
@@ -207,20 +220,19 @@
                     <button class="favourites">Избранное</button>
                   </div>
                   <div class="grid-3">
-                    <img src="img/star2.svg" alt="Две звезды" width="43" height="17">
+                    <div>
+                      <img src="img/star.svg" alt="Рейтинг 2 из 5" width="19" height="17">
+                      <img src="img/star.svg" alt="" width="19" height="17">
+                    </div>
                     <span class="rating">Рейтинг: 9,2</span>
                   </div>
                 </li>
               </ul>
-              <hr class="line">
               <div class="download-button"><button class="download-more" type="button">Загрузить еще</button></div>
-              <hr class="line">
             </section>
-
-            <section class="pagination">
               <h2 class="visually-hidden">нумерация страниц</h2>
-              <div class="pagination-list">
-                <ul>
+              <div class="pagination">
+                <ul class="pagination-list">
                   <li class="pagination-item">
                     <a class="pagination-figure" href="#">1</a>
                   </li>
@@ -248,10 +260,8 @@
                   <option value="r3">3</option>
                 </select>
               </div>
-            </section>
-  
           </div>
-          <section class="subscription-catalog">
+          <section id="catalog" class="subscription">
             <div class="subscribe-info">
               <h2 class="visually-hidden">Подписка на рассылку</h2>
               <p class="subscribe-mailing">Подпишитесь на рассылку</p>
@@ -267,7 +277,7 @@
 
     </main>
 
-    <footer class="page-footer">
+    <footer id="footer-catalog" class="page-footer">
       <ul class="footer-list">
         <li class="footer-item">
           <a class="footer-link" href="https://twitter.com/htmlacademy_ru">
