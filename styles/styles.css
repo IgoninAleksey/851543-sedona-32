@@ -215,12 +215,12 @@ body {
     background-repeat: no-repeat;
 }
 
-        #index {
+        .subscription-index {
             background-image: url(../img/subscription.jpg);
             color: #FFFFFF;
         }
 
-        #catalog {
+        .subscription-catalog {
             background-color: #FFFFFF;
             color: #000000;
         }
@@ -286,11 +286,11 @@ body {
     margin: 0 auto;
 }
 
-        #footer-index {
+        .footer-index {
             width: 1200px;
         }
 
-        #footer-catalog {
+        .footer-catalog {
             width: 1060px;
         }
 
@@ -588,6 +588,7 @@ body {
     background: #83B3D3;
     border-radius: 4px;
     padding: 16px 23px 16px 23px;
+    text-decoration: none;
 }
 
 
