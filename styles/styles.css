@@ -30,7 +30,14 @@ body {
 
 
 .visually-hidden {
-    display: none;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 
@@ -54,17 +61,27 @@ body {
 
 .navigation-list {
     list-style:none;
-    width: 310px;
-    margin: 0;
+    width: 400px;
+    margin: 20px 0px 20px 0px;
     padding: 0;
+}
+
+.navigation-item {
+    display: inline;
+    margin-right: 33px;
+}
+
+.hover-navigation :hover {
+    padding-bottom: 21px;
+    border-bottom: 3px solid #756257;
 }
 
 .navigation-user {
     display: flex;
     justify-content: flex-end;
     list-style:none;
-    width: 310px;
-    margin: 0;
+    width: 400px;
+    margin: 14px 0px 14px 0px;
     padding: 0;
 }
 
@@ -84,19 +101,23 @@ body {
 
 /*main*/
 .intro {
+    width: 1200px;
+    margin: 0 auto;
     background-image: url(../img/index-background.jpg);
     background-size: 100% auto;
     background-repeat: no-repeat;
-    background-color: aqua;
+    background-color: #FFFFFF;
 }
 
 .intro-img {
     display: block;
     margin:0 auto;
+    padding: 50px 0px 85px 0px;
 }
 
 .promo {
     text-align: center;
+    margin: 63px 0px 80px 0px;
 }
 .promo-title {
     font-weight: 700;
@@ -124,7 +145,8 @@ body {
     order: 1;
 }
 
-.advantage-text {
+.advantage-narration {
+    margin: 0px 75px 80px 75px;
     color: #333333;
 }
 
@@ -148,6 +170,11 @@ body {
 
 .advantage-title {
     text-transform: uppercase;
+    margin-top: 95px;
+}
+
+.advantage-offers {
+    margin-top: 185px;
 }
 
 .advantage-color {
@@ -158,18 +185,40 @@ body {
     margin: 0;
     width: 1200px;
     background-color: #83B3D3;
+    color: #FFFFFF; 
+    justify-content: space-between;
+}
+
+.advantage-box {
+    margin: 0 auto;
+    text-align: center;
+    width: 220px;
+}
+
+.advantage-number {
+    color: #FFFFFF;
+}
+
+.advantage-description {
     color: #FFFFFF;
 }
 
 .more-advantage {
+    text-align: center;
     background-color: rgba(131, 179, 211, 0.12);
 }
+
+.advantages-item {
+    text-align: center;
+}
+
 .more-advantage-item{
     background-color:rgba(131, 179, 211, 0.2);
 }
 
 .hotel-search {
     text-align: center;
+    margin: 90px 0px 90px 0px;
 }
 
 .search-question {
@@ -190,6 +239,7 @@ body {
     font-weight: 700;
     font-size: 20px;
     line-height: 36px;
+    padding: 17px 145px 17px 145px;
     color: #000000;
     background-color: #000000;
     text-decoration: none;
@@ -210,6 +260,9 @@ body {
 }
 
 .subscription {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 95px 0px 95px 0px;
     text-align: center;
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -223,25 +276,25 @@ body {
             color: #000000;
         }
         
-.subscribe-mailing {
+.subscription-mailing {
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
 }
 
-.useful-information {
+.subscription-information {
     font-size: 22px;
     line-height: 26px;
 }
 
-.name-field {
+.subscription-field {
     display: flex;
     width: 800px;
     margin: auto;
 }
 
-.subscribe {
+.subscription-subscribe {
     background: #83B3D3;
     border-radius: 0px 10px 10px 0px;
     border: 0;
@@ -253,14 +306,13 @@ body {
     font-size: 20px;
     line-height: 26px;
     text-transform: uppercase;
-
 } 
 
-.subscribe:hover {
+.subscription-subscribe:hover {
     cursor: pointer;
 }
 
-.email {
+.subscription-email {
     background: #F2F2F2;
     border-radius: 10px 0px 0px 10px;
     border: 0;
@@ -277,7 +329,17 @@ body {
     list-style: none;
 }
 
+.footer-item {
+    display: inline;
+    margin-right: 30px;
+}
+
+.footer-link {
+    text-decoration: none;
+}
+
 .page-footer {
+    padding: 40px 0px 30px 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -315,7 +377,7 @@ body {
 
 .filters-title {
     width: 100%;
-    margin: 0;
+    margin-bottom: 0px;
     font-weight: 700;
     font-size: 60px;
     line-height: 78px;
@@ -323,6 +385,7 @@ body {
 
 .breadcrumbs-list {
     display: inline;
+    list-style: none;
     width: 100%;
     height: 25px;
 }
@@ -332,6 +395,7 @@ body {
 }
 
 .breadcrumbs-item a {
+    text-decoration: none;
     color: #FFFFFF;
     font-size: 16px;
     line-height: 21px;
@@ -340,6 +404,7 @@ body {
 .checkbox-form {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 80px;
 }
 
 .checkbox-container {
@@ -371,9 +436,35 @@ body {
     margin-left:auto;
 }
 
-.value-filter > input {
+.value-filter {
+    display: inline;
+}
+
+.value-filter input {
+    height: 48px;
+    width: 144px;
+    border: 2px solid #FFFFFF;
+    border-radius: 5px;
     background-color: transparent;
     border-color: #FFFFFF; 
+}
+
+.toggle-min {
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+.toggle-max {
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+.accept-resset {
+    text-align: center;
 }
 
 .accept {
@@ -406,7 +497,9 @@ body {
 
 .reset {
     background-color: transparent;
-    border: 0;
+    border: none;
+    width: 160px;
+    height: 48px;
     color: #FFFFFF;
     font-size: 18px;
     line-height: 23px;
@@ -420,6 +513,8 @@ body {
 .sorting {
     display: flex;
     justify-content: space-between;
+    padding: 44px 0px 44px 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3) ;
 
 }
 
@@ -454,15 +549,15 @@ body {
 .item-card {
     display: flex;
     width: 100%;
-    border-bottom: 1px solid #333333;
-    padding-bottom: 30px;
-    margin-bottom: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 30px 0px 30px 0px;
     
 }
 
 .all-card {
     padding: 0;
     list-style: none;
+    margin: 0px;
 }
 
 .item-card p {
@@ -548,7 +643,7 @@ body {
     justify-content: center;
     width: 100%;
     margin: 0 auto;
-    border-bottom:1px solid #333333;
+    border-bottom:1px solid rgba(0, 0, 0, 0.3);
 }
 
 .download-more {
@@ -560,11 +655,16 @@ body {
     font-size: 20px;
     line-height: 26px;
     color: #FFFFFF;
-    margin-bottom: 30px;
+    margin: 30px 0px 30px 0px;
 }
+    .download-more:hover {
+        cursor: pointer;
+    }
 
 .pagination {
     display: flex;
+    align-items: center;
+    margin-top: 30px;
 }
 
 .pagination-list {

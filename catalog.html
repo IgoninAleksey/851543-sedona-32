@@ -10,13 +10,13 @@
     <header class="page-header">
       <nav class="navigation">
         <ul class="navigation-list">
-          <li class="navigation-item">
+          <li class="navigation-item hover-navigation">
             <a class="navigation-link" href="index.html">Главная</a>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-item hover-navigation">
             <a class="navigation-link" href="#">О Седоне</a>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-item hover-navigation">
             <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
@@ -95,13 +95,13 @@
                       <input type="text" name="max-value" placeholder="До">
                     </label>
                     <button class="toggle-min" type="button">
-                      <span class="value">Минимальная цена</span>
+                      <span class="value visually-hidden">Минимальная цена</span>
                     </button>
                     <button class="toggle-max" type="button">
-                      <span class="value">Максимальная цена</span>
+                      <span class="value visually-hidden">Максимальная цена</span>
                     </button>
                   </div>
-                  <div>
+                  <div class="accept-resset">
                     <button class="accept" type="submit">
                       Применить
                     </button>
@@ -258,19 +258,20 @@
                   <option value="r1">1</option>
                   <option value="r2">2</option>
                   <option value="r3">3</option>
+                  <option value="r4" selected>4</option>
                 </select>
               </div>
           </div>
           <section class="subscription subscription-catalog">
             <div class="subscribe-info">
               <h2 class="visually-hidden">Подписка на рассылку</h2>
-              <p class="subscribe-mailing">Подпишитесь на рассылку</p>
-              <p class="useful-information">Только полезная информация и никакого спама, честное бойскаутское!</p>
+              <p class="subscription-mailing">Подпишитесь на рассылку</p>
+              <p class="subscription-information">Только полезная информация и никакого спама, честное бойскаутское!</p>
             </div>
       
-            <form class="name-field">
-              <input class="email" type="email"  placeholder="Ваш e-mail">
-              <button class="subscribe" type="submit">Подписаться</button>
+            <form class="subscription-field">
+              <input class="subscription-email" type="email"  placeholder="Ваш e-mail">
+              <button class="subscription-subscribe" type="submit">Подписаться</button>
             </form>
            
           </section>
