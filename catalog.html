@@ -24,17 +24,17 @@
           <img class="logo" src="img/sedona-logo.svg" alt="Логотип Седона" width="138" height="70">
         </a>
         <ul class="navigation-user">
-          <li class="navigation-item">
+          <li class="navigation-item-user">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-item-user">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">Избранное</span>
             </a>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-item-user">
             <a class="navigation-button" href="#">Хочу сюда!</a>
           </li>
         </ul>
@@ -86,32 +86,30 @@
                   </ul>
                 </div>
                 <div class="cost-container">
-                  <div class="cost-child-container">
-                    <h3 class="cost-title">Стоимость, ₽:</h3>
-                    <label class="value-filter">
-                      <input type="text" name="min-value" placeholder="От">
-                    </label>
-                    <label class="value-filter">
-                      <input type="text" name="max-value" placeholder="До">
-                    </label>
-                    <div class="toggle-container">
-                      <button class="toggle-min" type="button">
-                        <span class="visually-hidden">Минимальная цена</span>
-                      </button>
-                      <button class="toggle-max" type="button">
-                        <span class="visually-hidden">Максимальная цена</span>
-                      </button>
-                     </div>
+                  <h3 class="cost-title">Стоимость, ₽:</h3>
+                  <label class="value-filter">
+                    <input type="text" name="min-value" placeholder="От">
+                  </label>
+                  <label class="value-filter">
+                    <input type="text" name="max-value" placeholder="До">
+                  </label>
+                  <div class="toggle-container">
+                    <button class="toggle-min" type="button">
+                      <span class="visually-hidden">Минимальная цена</span>
+                    </button>
+                    <button class="toggle-max" type="button">
+                      <span class="visually-hidden">Максимальная цена</span>
+                    </button>
+                    </div>
                   
                   
-                      <button class="accept" type="submit">
-                        Применить
-                      </button>
-                      <button class="reset" type="reset">
-                        Сбросить
-                      </button> 
-                    
-                  </div>
+                    <button class="accept" type="submit">
+                      Применить
+                    </button>
+                    <button class="reset" type="reset">
+                      Сбросить
+                    </button>
+                  </div> 
                 </div>
               </form>
             </div>
