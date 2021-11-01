@@ -113,6 +113,7 @@ body {
 
 
 /*main*/
+/* intro */
 .intro {
     width: 1200px;
     margin: 0 auto;
@@ -121,7 +122,7 @@ body {
     background-repeat: no-repeat;
     background-color: #FFFFFF;
 }
-
+/* promo */
 .intro-img {
     display: block;
     margin:0 auto;
@@ -249,7 +250,7 @@ body {
 .more-advantage-item{
     background-color:rgba(131, 179, 211, 0.2);
 }
-
+/* hotel-search */
 .hotel-search {
     text-align: center;
     width: 1200px;
@@ -295,7 +296,7 @@ body {
     height: 60px;
     border-radius: 10px;
 }
-
+/* subscription subscription-catalog */
 .subscription {
     width: 1200px;
     margin: 0 auto;
@@ -358,7 +359,7 @@ body {
     height: 60px;
 }
 
-/*footer*/
+/*footer footer-catalog */
 
 .footer-list {
     margin: 0;
@@ -402,6 +403,7 @@ body {
 /*catalog*/
 
 /*main*/
+/* filters */
 .filters {
     background-image: url("../img/catalog-background 1.jpg");
     background-color: black;
@@ -584,7 +586,7 @@ body {
     font-size: 18px;
     line-height: 23px;
 }
-
+/* SORTING */
 .catalog-container {
     width: 1060px;
     margin: 0 auto;
@@ -625,7 +627,7 @@ body {
     display: flex;
     list-style: none;
 }
-
+/* hotel-cards */
 .item-card {
     display: flex;
     width: 100%;
@@ -745,7 +747,7 @@ body {
     .download-more:hover {
         cursor: pointer;
     }
-
+/* pagination */
 .pagination {
     display: flex;
     align-items: center;
