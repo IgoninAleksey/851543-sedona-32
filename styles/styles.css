@@ -71,19 +71,14 @@ body {
     padding: 0;
 }
 
-.navigation-item {
-    position: relative;
-    margin: 0px 9px 0px 0px;
-}
-
 .navigation-link {
     color:#000000;
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
     text-decoration: none;
-    margin-bottom: 40px;
-    padding: 6px 12px 6px 12px;
+    margin: 0px 10px 40px 0px;
+    padding: 6px 8px 6px 8px;
 }
     .navigation-link:hover {
         color: #756257;
@@ -129,6 +124,10 @@ body {
     align-items: center;
     margin: 0px 0px 0px 20px;
 }
+.navigation-item-user:nth-child(2) {
+    margin: 0px 20px 0px 30px;
+}
+
 
 .navigation-user :nth-last-child(n+2) {
     width: 18px;
@@ -165,7 +164,7 @@ body {
     color: #FFFFFF;
     text-transform: uppercase;
     text-decoration: none;
-    padding: 10px 29px 10px 29px;
+    padding: 9px 34px 9px 34px;
     border-radius: 4px;
 }
     .navigation-button:hover {
@@ -206,7 +205,7 @@ body {
 .promo {
     text-align: center;
     margin: 0 auto;
-    padding: 65px 0px 80px 0px;
+    padding: 38px 0px 68px 0px;
     width: 1200px;
 }
 .promo-title {
@@ -221,6 +220,7 @@ body {
     font-size: 22px;
     line-height: 36px;
     color:#333333;
+    margin: 25px 0px 22px 0px;
 }
 
 /* advantages */
@@ -231,19 +231,22 @@ body {
 }
 
 .advantage-narration {
-    padding: 26px 0px 0px 0px;
-    margin: 0;
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    margin: 20px 0px 0px 0px;
     color: #333333;
 }
 
 .advantages-img {
     min-width: 800px;
-    height: 400px;
+    height: 384px;
 }
 
 .advantages-list {
     display: grid;
-    grid-template-columns: 400px 400px 40px;
     list-style:none;
     margin: 0;
     padding: 0;
@@ -279,17 +282,20 @@ body {
 
 .advantage-title {
     text-transform: uppercase;
-    padding: 95px 0px 0px 0px;
-    margin: 0;
+    margin: 95px 0px 0px 0px;
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
 }
 
 .advantage-text {
-    padding: 25px 0px 0px 0px;
-    margin: 0;
+    margin: 25px 0px 0px 0px;
 }
 
 .advantage-offers {
-    padding: 184px 0px 0px 0px;
+    margin: 180px 0px 0px 0px;
 }
 
 .advantage-coldlight {
@@ -339,7 +345,7 @@ body {
     text-align: center;
     width: 1200px;
     margin: 0 auto;
-    padding: 90px 0px 90px 0px;
+    padding: 50px 0px 90px 0px;
 }
 
 .search-question {
@@ -352,6 +358,7 @@ body {
 }
 
 .search-date {
+    margin: 28px 0px 65px 0px;
     font-size: 22px;
     line-height: 26px;
     color: #333333;
@@ -359,6 +366,7 @@ body {
 
 
 .hotel-button {
+    display: block;
     font-weight: 700;
     font-size: 20px;
     line-height: 36px;
@@ -366,9 +374,9 @@ body {
     text-transform: uppercase;
     color: #FFFFFF;
     background: #756257;
-    width: 575px;
-    height: 60px;
-    padding: 17px 145px 17px 145px;
+    width: 280px;
+    margin: 0 auto;
+    padding: 12px 145px 12px 145px;
     border-radius: 10px;
 }
     .hotel-button:hover {
@@ -400,10 +408,7 @@ body {
             background-color: #FFFFFF;
             color: #000000;
         }
-
-.subscription-info {
-    padding: 30px 0px 22px 0px;
-}        
+   
 
 .subscription-mailing {
     font-weight: 700;
@@ -416,7 +421,7 @@ body {
 .subscription-information {
     font-size: 22px;
     line-height: 26px;
-    margin: 22px 0px 0px 0px;
+    margin: 22px 0px 48px 0px;
 }
 
 .subscription-field {
@@ -433,8 +438,9 @@ body {
     width: 200px;
     height: 60px;
     color: #FFFFFF;
+    font-style: normal;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 17px;
     line-height: 26px;
     text-transform: uppercase;
 } 
@@ -471,7 +477,7 @@ body {
 
 .footer-list {
     display: flex;
-    margin: 0;
+    margin:  0px;
     padding: 0;
     list-style: none;
 }
@@ -506,7 +512,7 @@ body {
 
 .page-footer {
     box-sizing: border-box;
-    padding: 40px 70px 30px 70px;
+    padding: 30px 60px 30px 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -520,7 +526,6 @@ body {
 
 .contacts-phone {
     font-size: 40px;
-    line-height: 40px;
     text-decoration: none;
     color: #000000;
     padding: 15px;
