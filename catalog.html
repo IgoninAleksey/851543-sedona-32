@@ -6,7 +6,6 @@
     <title>HTML Academy: Каталог</title>
   </head>
   <body>
-  <div class="body-content">
     <header class="page-header">
       <header class="page-header">
         <nav class="navigation">
@@ -79,33 +78,33 @@
                   </a>
                 </li>
                 <li class="breadcrumbs-item">
-                  <svg class="breadcrumbs-arrow" width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g opacity="0.3" clip-path="url(#clip0_5:562)">
-                      <path d="M4.8 3.60005L0.999999 0.200049C0.799999 4.88311e-05 0.399999 4.88311e-05 0.0999989 0.200049C-0.200001 0.400049 -0.100001 0.800049 0.0999989 1.00005L3.4 4.00005L0.199999 7.00005C-1.11759e-06 7.20005 -1.11759e-06 7.60005 0.199999 7.80005C0.199999 7.90005 0.499999 8.00005 0.599999 8.00005C0.699999 8.00005 0.899999 7.90005 0.999999 7.80005L4.8 4.40005C5.1 4.20005 5.1 3.80005 4.8 3.60005Z" fill="white"/>
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_5:562">
-                        <rect width="5" height="8" fill="white"/>
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </li>
-                <li class="breadcrumbs-item">
                   <a class="breadcrumbs-link" href="#">Гостиницы</a>
                 </li>
               </ul>
               <form class="checkbox-form" action="https://echo.htmlacademy.ru/">
                 <div class="checkbox-container">
-                  <h3 class="title-set">Инфраструктура:</h3>
+                  <h2 class="title-set">Инфраструктура:</h2>
                   <ul class="checkbox-set">
                     <li class="checkbox-item">
-                      <input class="checkbox-input" type="checkbox" name="type-of-housing" value="pool">Бассейн
+                      <label class="control">
+                        <input class="visually-hidden checkbox-input" type="checkbox" name="type-of-housing" value="pool">
+                        <span class="checkbox"></span>
+                        <span class="checkbox-name">Бассейн</span>
+                      </label>
                     </li>
                     <li class="checkbox-item">
-                      <input class="checkbox-input" type="checkbox" name="type-of-housing" value="parking">Парковка
+                      <label class="control">
+                        <input class="visually-hidden checkbox-input" type="checkbox" name="type-of-housing" value="parking">
+                        <span class="checkbox"></span>
+                        <span class="checkbox-name">Парковка</span>
+                      </label>
                     </li>
                     <li class="checkbox-item">
-                      <input class="checkbox-input" type="checkbox" name="type-of-housing" value="wi-fi">Wi-Fi
+                      <label class="control">
+                        <input class="visually-hidden checkbox-input" type="checkbox" name="type-of-housing" value="wi-fi">
+                        <span class="checkbox"></span>
+                        <span class="checkbox-name">Wi-Fi</span>
+                      </label>
                     </li>
                   </ul>
                 </div>
@@ -113,41 +112,54 @@
                   <h3 class="title-set">Тип жилья:</h3>
                   <ul class="radiobutton-set">
                     <li class="radio-item">
-                      <input type="radio" name="infrastructure" value="hotel">Гостиница
+                      <label class="">
+                        <input class="visually-hidden radio-input" type="radio" name="infrastructure" value="hotel">
+                        <span class="radio"></span>
+                        <span class="radio-name">Гостиница</span>
+                      </label>
                     </li>
                     <li class="radio-item">
-                      <input type="radio" name="infrastructure" value="motel" >Мотель
+                      <label class="">
+                        <input class="visually-hidden radio-input" type="radio" name="infrastructure" value="motel" >
+                        <span class="radio"></span>
+                        <span class="radio-name">Мотель</span>
+                      </label>
                     </li>
                     <li class="radio-item">
-                      <input type="radio" name="infrastructure" value="apartment">Апартаменты
+                      <label class="">
+                        <input class="visually-hidden radio-input" type="radio" name="infrastructure" value="apartment">
+                        <span class="radio"></span>
+                        <span class="radio-name">Апартаменты</span>
+                      </label>
                     </li>
                   </ul>
                 </div>
                 <div class="cost-container">
                   <h3 class="cost-title">Стоимость, ₽:</h3>
-                  <label class="value-filter">
-                    <input class="value-min" type="text" name="min-value" placeholder="От">
-                  </label>
-                  <label class="value-filter">
-                    <input class="value-max" type="text" name="max-value" placeholder="До">
-                  </label>
+                  <div class="value-container">
+                    <label class="value-filter">
+                      <input class="value-min" type="text" name="min-value" placeholder="0">
+                    </label>
+                    <label class="value-filter">
+                      <input class="value-max" type="text" name="max-value" placeholder="9000">
+                    </label>
+                  </div>
                   <div class="toggle-container">
-                    <button class="toggle-min" type="button">
-                      <span class="visually-hidden">Минимальная цена</span>
-                    </button>
-                    <button class="toggle-max" type="button">
-                      <span class="visually-hidden">Максимальная цена</span>
-                    </button>
+                    <div class="toggle-range">
+                      <button class="toggle-min" type="button">
+                        <span class="visually-hidden">Минимальная цена</span>
+                      </button>
+                      <button class="toggle-max" type="button">
+                        <span class="visually-hidden">Максимальная цена</span>
+                      </button>
                     </div>
-                  
-                  
-                    <button class="accept" type="submit">
-                      Применить
-                    </button>
-                    <button class="reset" type="reset">
-                      Сбросить
-                    </button>
-                  </div> 
+                  </div>
+                  <button class="accept" type="submit">
+                    Применить
+                  </button>
+                  <button class="reset" type="reset">
+                    Сбросить
+                  </button>
                 </div>
               </form>
             </div>
@@ -164,38 +176,16 @@
               <ul class="layouts-list">
                 <li class="position-item">
                   <a class="position-link" href="#">
-                    <svg class="position-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M6 3H2V9H6V3Z" fill="black"/>
-                      <path d="M18 3H14V9H18V3Z" fill="black"/>
-                      <path d="M12 3H8V9H12V3Z" fill="black"/>
-                      <path d="M6 11H2V17H6V11Z" fill="black"/>
-                      <path d="M18 11H14V17H18V11Z" fill="black"/>
-                      <path d="M12 11H8V17H12V11Z" fill="black"/>
-                    </svg>
                     <span class="tile"> </span>
                   </a>
                 </li>
                 <li class="position-item">
                   <a class="position-link" href="#">
-                    <svg class="position-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M18 15H2V17H18V15Z" fill="black"/>
-                      <path d="M16 5V11H4V5H16ZM18 3H2V13H18V3Z" fill="black"/>
-                    </svg>
                     <span class="block"> </span>
                   </a>
                 </li>
                 <li class="position-item">
-                  <a class="position-link" href="#">
-                    <svg class="position-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M4 3H2V5H4V3Z" fill="black"/>
-                      <path d="M18 3H6V5H18V3Z" fill="black"/>
-                      <path d="M4 7H2V9H4V7Z" fill="black"/>
-                      <path d="M18 7H6V9H18V7Z" fill="black"/>
-                      <path d="M4 11H2V13H4V11Z" fill="black"/>
-                      <path d="M18 11H6V13H18V11Z" fill="black"/>
-                      <path d="M4 15H2V17H4V15Z" fill="black"/>
-                      <path d="M18 15H6V17H18V15Z" fill="black"/>
-                    </svg>                      
+                  <a class="position-link" href="#">         
                     <span class="list"> </span>
                   </a>
                 </li>
@@ -204,11 +194,12 @@
 
             <section class="hotel-cards">  
               <ul class="all-card">
-                
                 <li class="item-card">
-                    <img class="hotel-img" src="img/amara.jpg" alt="Гостиница" width="180" height="120">
+                  <a class="hotel-img" href="#">
+                    <img src="img/amara.jpg" alt="Гостиница" width="180" height="120">
+                  </a>
                   <div class="grid-1">
-                    <h3 class="hotel-title">Amara Resort & Spa</h3>
+                    <h3 class="hotel-title"><a class="hotel-link" href="#">Amara Resort & Spa</a></h3>
                     <p class="hotel-identification">Гостиница</p>
                     <button class="more-detailed">Подробнее</button>
                     <p class="initial-price">От 3500 Р.</p>
@@ -226,9 +217,11 @@
                 </li>
                 
                 <li class="item-card">
-                  <img class="hotel-img" src="img/desert.jpg" alt="Мотель" width="180" height="120">
+                  <a class="hotel-img" href="#">
+                    <img src="img/desert.jpg" alt="Мотель" width="180" height="120">
+                  </a>
                   <div class="grid-1">
-                    <h3 class="hotel-title">Desert Quail Inn</h3>
+                    <h3 class="hotel-title"><a class="hotel-link" href="#">Desert Quail Inn</a></h3>
                     <p class="hotel-identification">Мотель</p>
                     <button class="more-detailed">Подробнее</button>
                     <p class="initial-price">От 3000 Р.</p>
@@ -245,9 +238,11 @@
                 </li>
                 
                 <li class="item-card">
-                  <img class="hotel-img" src="img/villas.jpg" alt="Апартаменты" width="180" height="120">
-                  <div class="grid-1">
-                    <h3 class="hotel-title">Villas at Poco Diablo</h3>
+                  <a class="hotel-img" href="#">
+                    <img src="img/villas.jpg" alt="Апартаменты" width="180" height="120">
+                  </a>
+                    <div class="grid-1">
+                    <h3 class="hotel-title"><a class="hotel-link" href="#">Villas at Poco Diablo</a></h3>
                     <p class="hotel-identification">Апартаменты</p>
                     <button class="more-detailed">Подробнее</button>
                     <p class="initial-price">От 2000 ₽.</p>
@@ -263,9 +258,11 @@
                 </li>
   
                 <li class="item-card">
-                  <img class="hotel-img" src="img/greentree.jpg" alt="Гостиница" width="180" height="120">
-                  <div class="grid-1">
-                    <h3 class="hotel-title">GreenTree Inn</h3>
+                  <a class="hotel-img" href="#">
+                    <img src="img/greentree.jpg" alt="Гостиница" width="180" height="120">
+                  </a>
+                    <div class="grid-1">
+                    <h3 class="hotel-title"><a class="hotel-link" href="#">GreenTree Inn</a></h3>
                     <p class="hotel-identification">Гостиница</p>
                     <button class="more-detailed">Подробнее</button>
                     <p class="initial-price">От 3000 Р.</p>
@@ -298,10 +295,10 @@
                     <a class="pagination-figure" href="#">4</a>
                   </li>
                   <li class="pagination-item">
-                    <a class="pagination-figure-two" href="#">...</a>
+                    <span class="pagination-figure">...</a>
                   </li>
                   <li class="pagination-item">
-                    <a class="pagination-figure-two" href="#">10</a>
+                    <a class="pagination-figure" href="#">10</a>
                   </li>
                 </ul>
               
@@ -358,11 +355,12 @@
         <li class="footer-item footer-item-catalog">
           <a class="footer-link" href="https://www.youtube.com/c/HTMLAcademyRUS">
             <svg class="footer-icon" width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0)">
-                <path d="M17 0H2.9C1.2 0 0 1.5 0 3.2V12.7C0 14.5 1.2 16 2.9 16H17.2C18.7 16 20.1 14.5 20.1 12.8V3.2C19.9 1.5 18.7 0 17 0ZM7 11.8V4.2L13.7 8L7 11.8Z" />
+              <g clip-path="url(#clip2)">
+                <path d="M17 0H2.9C1.2 0 0 1.5 0 3.2V12.7C0 14.5 1.2 16 2.9 16H17.2C18.7 16
+                20.1 14.5 20.1 12.8V3.2C19.9 1.5 18.7 0 17 0ZM7 11.8V4.2L13.7 8L7 11.8Z" />
               </g>
                 <defs>
-                  <clipPath id="clip0">
+                  <clipPath id="clip2">
                     <rect width="20" height="16" fill="white"/>
                   </clipPath>
                 </defs>
@@ -422,8 +420,6 @@
           27.0001Z" />
         </svg>
       </a>
-      
     </footer>
-  </div>
   </body>
 </html>
