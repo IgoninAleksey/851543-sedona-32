@@ -99,8 +99,9 @@ body {
     display: block;
     width: 138px;
     height: 70px;
-    left: 50%;
-    margin-left: -69px;
+    left:50%;
+    transform: translateX(-50%);
+
     
 
 }
@@ -676,6 +677,8 @@ body {
     font-weight: normal;
     font-size: 18px;
     line-height: 23px;
+    box-sizing: border-box;
+    margin-left: 3px;
 
 }
 
@@ -689,21 +692,32 @@ body {
     border-radius: 4px;
 }
 
-.checkbox:hover {
+
+
+.checkbox-marker[type="checkbox"]:checked + .checkbox::before,
+.checkbox-marker[type="checkbox"]:checked + .checkbox::after {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    width: 12px;
+    height: 10px;
+    background-image: url(../img/check.svg);
+    content: '';
+}
+
+.checkbox-marker:hover + .checkbox{
     background-color: rgba(255, 255, 255, 0.6);
 }
 
-.checkbox-input[type="checkbox"]:checked + .checkbox::before,
-.checkbox-input[type="checkbox"]:checked + .checkbox::after {
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  width: 12px;
-  height: 10px;
-  background-image: url(../img/check.svg);
-  content: '';
+.checkbox-marker:focus + .checkbox {
+    box-shadow: 0 0 0 3px #68A2CA;
+    outline: none;
 }
 
+.checkbox-marker:active + .checkbox {
+    background-color: rgba(255, 255, 255, 0.3);
+}
 .checkbox-name {
     margin-left: 40px;
 }
@@ -744,19 +758,29 @@ body {
     border-radius: 50%;
 }
 
-.radio:hover {
-    background-color: rgba(255, 255, 255, 0.6);
-}
-
-.radio-input[type="radio"]:checked + .radio::before {
+.radio-marker[type="radio"]:checked + .radio::before {
     position: absolute;
-    top: 5px;
-    left: 5px;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
     width: 10px;
     height: 10px;
     background-color: #3F5E72;
     border-radius: 50%;
     content: '';
+}
+
+.radio-marker:hover + .radio {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.radio-marker:focus + .radio {
+    box-shadow: 0 0 0 3px #68A2CA;
+    outline: none;
+}
+
+.radio-marker:active + .radio {
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 .radio-name {
@@ -807,6 +831,7 @@ body {
 
 .value-min:focus {
     box-shadow: 0 0 0 3px #81B3D2;
+    box-shadow: inset;
     border-radius: 4px 0px 0px 4px;
     outline: none;
 
@@ -870,7 +895,8 @@ body {
 
 .toggle-min {
     position: absolute;
-    top: -7px;
+    top:50%;
+    transform: translateY(-50%);
     width: 20px;
     height: 20px;
     border-radius: 5px;
@@ -889,7 +915,8 @@ body {
 
 .toggle-max {
     position: absolute;
-    top: -7px;
+    top:50%;
+    transform: translateY(-50%);
     left: 217px;
     width: 20px;
     height: 20px;
@@ -1066,8 +1093,6 @@ body {
 
 .tile {
     display: block;
-    width: 16px;
-    height: 14px;
     background-image: url(../img/tile.svg);
     background-position: center;
     background-repeat: no-repeat;
@@ -1075,8 +1100,6 @@ body {
 
 .block {
     display: block;
-    width: 16px;
-    height: 14px;
     background-image: url(../img/slideshow.svg);
     background-position: center;
     background-repeat: no-repeat;
@@ -1084,8 +1107,6 @@ body {
 
 .list {
     display: block;
-    width: 16px;
-    height: 14px;
     background-image: url(../img/list.svg);
     background-position: center;
     background-repeat: no-repeat;
