@@ -34,6 +34,307 @@ body {
     overflow: hidden;
 }
 
+/* popover */
+.popover {
+    display: none;
+    position: absolute;
+    box-sizing: border-box;
+    width: 400px;
+    min-height: 232px;
+    border-top: 1px solid #E6E6E6;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    top: 50px;
+    left: 19px;
+    transform: translateX(-50%);
+}
+
+.popover-catalog {
+    left: 56px;
+}
+
+.popover-open {
+    display: block;
+}
+
+.popoverarrow {
+    position: absolute;
+    top: -10px;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.popover-content {
+    width: 100%;
+}
+
+.popover-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.popover-item {
+    margin: 23px 0px 0px 20px;
+}
+
+.popover-item ~ .popover-item {
+    margin: 25px 0px 0px 20px;
+}
+
+.popover-container-cart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 21px;
+}
+
+.popover-link {
+    display: grid;
+    width: 300px;
+    margin: 0;
+    column-gap: 17px;
+    align-items: center;
+    grid-template-columns: 48px 244px;
+    text-decoration: none;
+    color: #000000;
+    padding: 0px 0px 0px 5px;
+}
+
+.popover-link:hover {
+    opacity: 0.6;
+}
+
+.popover-link:focus {
+    box-shadow: 0 0 0 3px #83B3D3;
+    border-radius: 10px;
+}
+
+.popover-link:active {
+    opacity: 0.3;
+}
+
+.popover-img {
+    object-fit: cover;
+    border-radius: 50%;
+    grid-row: 1/3;
+}
+
+.popover-hotel-title {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0;
+}
+
+.popover-housing-type {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    margin: 0px 0px 5px 0px;
+}
+
+.popover-trash {
+    width: 36px;
+    height: 36px;
+    border: none;
+    background-image: url(../img/trash.svg);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.6;
+}
+
+.popover-trash:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.popover-trash:active {
+    opacity: 0.3;
+}
+
+.popover-trash:focus {
+    box-shadow: 0 0 0 3px #83B3D3;
+    border-radius: 10px;
+    outline: none;
+}
+
+.popover-button {
+    position: absolute;
+    width: 100%;
+    padding: 20px 0px 20px 0px;
+    border-radius: 0px 0px 17px 17px;
+    border: none;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    background-color: #756257;
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.popover-button:hover {
+    background-color: #615048;
+    cursor: pointer;
+}
+
+.popover-button:focus {
+    box-shadow: inset 0 0 0 3px #83B3D3;
+    outline: none;
+}
+
+.popover-button:active {
+    color: rgba(255, 255, 255, 0.300);
+}
+
+/* modal window */
+
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+.modal {
+    position: relative;
+    width: 635px;
+    margin: auto;
+    padding: 40px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
+    border-radius: 30px;
+}
+
+.modal-title {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 40px;
+    text-transform: uppercase;
+    margin: 20px 0px 0px 30px;
+}
+
+.modal-exit {
+    position: absolute;
+    width: 53px;
+    height: 53px;
+    border-radius: 50%;
+    border:none;
+    background-image: url(../img/close.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #F2F2F2;
+    right: 70px;
+    top: 54px;
+}
+
+.modal-booking {
+    margin: 60px 0px 0px 30px;
+}
+
+.field-group {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 155px 420px;
+    row-gap: 40px;
+}
+
+.field-group-two {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 155px 133px 110px 43px 133px;
+    margin: 42px 60px 0px 0px;
+}
+
+.notation-form {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.child {
+    margin-left: 56px;
+}
+
+.date-form {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 40px;
+    box-sizing: border-box;
+    padding: 4px 17px 4px 19px;
+    border: none;
+    background-color: #F2F2F2;
+    border-radius: 4px;
+}
+
+.child-info-link {
+    display: block;
+}
+
+.child-info {
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #83B3D3;
+    background-image: url(../img/info.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 18px;
+}
+
+.warning {
+    position: absolute;
+    width: 256px;
+    background-color: #333333;
+    border-radius: 10px;
+}
+
+.number-of-people {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 40px;
+    border: none;
+    background-color: #F2F2F2;
+    margin: 0px 0px 0px 0px;
+}
+
+.modal-button {
+    display: block;
+    width: 575px;
+    
+    margin-top: 45px;
+    padding: 10px 0px 10px 0px;
+    border: none;
+    border-radius: 10px;
+    background-color: #83B3D3;
+    font-family: "PT Sans";
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 40px;
+    text-transform: uppercase;
+}
 
 /*header*/
 
@@ -119,6 +420,7 @@ body {
 }
 
 .navigation-item-user {
+    position: relative;
     margin: 0px 10px 0px 10px;
 }
 

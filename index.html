@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="img/favicon.png">
     <title>HTML Academy: Седона</title>
   </head>
   <body>
@@ -54,6 +55,52 @@
               </svg>
               <span class="visually-hidden">Избранное</span>
             </a>
+            <div class="popover popover-open">
+              <svg class="popoverarrow" width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_d_5_544)">
+                <path d="M10 1L20 10H0L10 1Z" fill="white"/>
+                </g>
+                <defs>
+                <filter id="filter0_d_5_544" x="0" y="0" width="20" height="10" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dy="-1"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0.894118 0 0 0 0 0.894118 0 0 0 0 0.894118 0 0 0 1 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_5_544"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_5_544" result="shape"/>
+                </filter>
+                </defs>
+              </svg>                
+              <div class="popover-content">
+                <ul class="popover-list">
+                  <li class="popover-item">
+                    <div class="popover-container-cart">
+                      <a class="popover-link" href="#">
+                        <img class="popover-img" src="img/desert.jpg" alt="#" width="48" height="48">
+                        <p class="popover-hotel-title">Desert Quail Inn</p>
+                        <p class="popover-housing-type">Мотель</p>
+                      </a>
+                      <button class="popover-trash">
+                        <span class="visually-hidden">Убрать из корзины</span>
+                      </button>
+                    </div>
+                  </li>
+                  <li class="popover-item">
+                    <div class="popover-container-cart">
+                      <a class="popover-link" href="#">
+                        <img class="popover-img" src="img/villas.jpg" alt="#" width="48" height="48">
+                        <p class="popover-hotel-title">Villas at Poco Diablo</p>
+                        <p class="popover-housing-type">Апартаменты</p>
+                      </a>
+                      <button class="popover-trash">
+                        <span class="visually-hidden">Убрать из корзины</span>
+                      </button>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <button class="popover-button">Все избранные</button>
+            </div>
           </li>
           <li class="navigation-item-user">
             <a class="navigation-button" href="#">Хочу сюда!</a>
@@ -250,7 +297,36 @@
           27.0001Z" />
         </svg>
       </a>
-      
     </footer>
+    <div class="modal-container">
+      <div class="modal modal-auth">
+        <h2 class="visually-hidden">Выбор </h2>
+        <h2 class="modal-title">Поиск гостиниц в седоне</h2>
+        <button class="modal-exit"></button>
+        <section class="modal-booking">
+          <h2 class="visually-hidden">Выбор даты заезда</h2>
+          <form action="https://echo.htmlacademy.ru/">
+            <p class="field-group">
+              <label class="visually-hidden" >Дата заезда</label>
+              <span class="notation-form">Дата заезда:</span>
+              <input class="date-form" type="date" name="arrival_date">
+              <label class="visually-hidden" >Дата выезда</label>
+              <span class="notation-form">Дата выезда:</span>
+              <input class="date-form" type="date" name="departure_date">
+            </p>
+            <p class="field-group-two">
+              <span class="notation-form">Взрослые:</span>
+              <input class="number-of-people" type="number" name="adults">
+              <span class="notation-form child">Дети:</span>
+              <span class="child-info-link">
+                <a class="child-info"></a>
+              </span>
+              <input class="number-of-people" type="number" name="child">
+            </p>
+            <button class="modal-button">Найти</button>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
