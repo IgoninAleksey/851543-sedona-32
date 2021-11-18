@@ -298,8 +298,8 @@
         </svg>
       </a>
     </footer>
-    <div class="modal-container">
-      <div class="modal modal-auth">
+    <div class="modal-container modal-container-open">
+      <div class="modal">
         <h2 class="visually-hidden">Выбор </h2>
         <h2 class="modal-title">Поиск гостиниц в седоне</h2>
         <button class="modal-exit"></button>
@@ -318,13 +318,15 @@
               <span class="notation-form">Взрослые:</span>
               <input class="number-of-people" type="number" name="adults">
               <span class="notation-form child">Дети:</span>
-              <span class="child-info-link">
-                <a class="child-info"></a>
-              </span>
+              <a class="child-info"></a>
               <input class="number-of-people" type="number" name="child">
             </p>
             <button class="modal-button">Найти</button>
           </form>
+          <div class="popover-child">
+            <div class="popover-triangle"></div>
+            <p class="popover-child-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
+          </div>
         </section>
       </div>
     </div>

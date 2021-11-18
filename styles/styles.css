@@ -198,14 +198,18 @@ body {
 /* modal window */
 
 .modal-container {
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
-    display: flex;
     width: 100%;
     height: 100%;
     background-color: rgba(255, 255, 255, 0.8);
   }
+
+.modal-container-open {
+    display: flex;
+}
 
 .modal {
     position: relative;
@@ -239,6 +243,20 @@ body {
     background-color: #F2F2F2;
     right: 70px;
     top: 54px;
+}
+
+.modal-exit:hover {
+    background-color: #E6E6E6;
+    cursor: pointer;
+}
+
+.modal-exit:focus {
+    box-shadow: 0 0 0 3px #83B3D3;
+    outline: none;
+}
+
+.modal-exit:active {
+    opacity: 0.6;
 }
 
 .modal-booking {
@@ -284,8 +302,12 @@ body {
     border-radius: 4px;
 }
 
-.child-info-link {
-    display: block;
+.date-form:hover {
+    background-color: #E6E6E6;
+}
+
+.date-form:focus {
+    box-shadow: 0 0 0 3px #83B3D3;
 }
 
 .child-info {
@@ -298,6 +320,10 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     margin-right: 18px;
+}
+
+.child-info:hover {
+background-color: #68A2CA;
 }
 
 .warning {
@@ -314,14 +340,24 @@ body {
     font-size: 18px;
     line-height: 40px;
     border: none;
+    border-radius: 4px;
     background-color: #F2F2F2;
     margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 20px;
+    box-sizing: border-box;
+}
+
+.number-of-people:hover {
+    background-color: #E6E6E6;
+}
+
+.number-of-people:focus {
+    box-shadow: 0 0 0 3px #83B3D3;
 }
 
 .modal-button {
     display: block;
     width: 575px;
-    
     margin-top: 45px;
     padding: 10px 0px 10px 0px;
     border: none;
@@ -334,6 +370,49 @@ body {
     font-size: 20px;
     line-height: 40px;
     text-transform: uppercase;
+}
+
+.modal-button:hover {
+    background-color: #68A2CA;
+}
+
+.modal-button:focus {
+    box-shadow: 0 0 0 3px #756257;
+}
+
+.modal-button:active {
+    color: rgba(255, 255, 255, 0.300);
+}
+
+.popover-child {
+    position: absolute;
+    bottom: 6px;
+    left: 353px;
+    width: 256px;
+    border-radius: 10px;
+    background-color: #333333;
+}
+
+.popover-child-text {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    padding: 15px 18px 18px 22px;
+    margin: 0;
+}
+
+.popover-triangle {
+    position: absolute;
+    top: -9px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0px;
+    border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 9px solid #333333;
 }
 
 /*header*/
