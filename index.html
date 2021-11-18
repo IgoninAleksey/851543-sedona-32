@@ -300,34 +300,32 @@
     </footer>
     <div class="modal-container modal-container-open">
       <div class="modal">
-        <h2 class="visually-hidden">Выбор </h2>
         <h2 class="modal-title">Поиск гостиниц в седоне</h2>
         <button class="modal-exit"></button>
-        <section class="modal-booking">
+        <div class="modal-booking">
           <h2 class="visually-hidden">Выбор даты заезда</h2>
           <form action="https://echo.htmlacademy.ru/">
             <p class="field-group">
-              <label class="visually-hidden" >Дата заезда</label>
-              <span class="notation-form">Дата заезда:</span>
-              <input class="date-form" type="date" name="arrival_date">
-              <label class="visually-hidden" >Дата выезда</label>
-              <span class="notation-form">Дата выезда:</span>
-              <input class="date-form" type="date" name="departure_date">
+              <label class="notation-form" for="arrival_date">Дата заезда:</label>
+              <input class="date-form" type="text" name="arrival_date" placeholder="27 Апреля 2020">
+              <label class="notation-form" for="departure_date">Дата выезда:</label>
+              <input class="date-form" type="text" name="departure_date" placeholder="1 Сентября 2021">
             </p>
-            <p class="field-group-two">
-              <span class="notation-form">Взрослые:</span>
-              <input class="number-of-people" type="number" name="adults">
-              <span class="notation-form child">Дети:</span>
-              <a class="child-info"></a>
-              <input class="number-of-people" type="number" name="child">
-            </p>
+            <div class="field-group-two">
+              <label class="notation-form" for="abults">Взрослые:</label>
+              <div class="number">
+                <input class="number-of-people" type="text" name="adults" placeholder="2">
+              </div>
+              <label class="notation-form child" for="child">Дети:</label>
+                <a class="child-info" href="#" data-info="Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно."></a>
+              <div class="number">
+                <input class="number-of-people" type="text" name="child" placeholder="1">
+              </div>
+            </div>
             <button class="modal-button">Найти</button>
           </form>
-          <div class="popover-child">
-            <div class="popover-triangle"></div>
-            <p class="popover-child-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
-          </div>
-        </section>
+          
+        </div>
       </div>
     </div>
   </body>
