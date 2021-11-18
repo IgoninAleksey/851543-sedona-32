@@ -121,7 +121,7 @@ body {
 }
 
 .popover-hotel-title {
-    font-family: "PT Sans";
+    font-family: "PT Sans", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -129,7 +129,7 @@ body {
 }
 
 .popover-housing-type {
-    font-family: "PT Sans";
+    font-family: "PT Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -172,7 +172,7 @@ body {
     transform: translateX(-50%);
     bottom: 0;
     background-color: #756257;
-    font-family: "PT Sans";
+    font-family: "PT Sans", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -222,7 +222,7 @@ body {
 }
 
 .modal-title {
-    font-family: "PT Sans";
+    font-family: "PT Sans", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 30px;
@@ -278,7 +278,7 @@ body {
 }
 
 .notation-form {
-    font-family: "PT Sans";
+    font-family: "PT Sans", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -290,7 +290,7 @@ body {
 }
 
 .date-form {
-    font-family: "PT Sans";
+    font-family: "PT Sans", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -334,7 +334,7 @@ background-color: #68A2CA;
 }
 
 .number-of-people {
-    font-family: "PT Sans";
+    font-family: "PT Sans", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -363,7 +363,7 @@ background-color: #68A2CA;
     border: none;
     border-radius: 10px;
     background-color: #83B3D3;
-    font-family: "PT Sans";
+    font-family: "PT Sans", sans-serif;
     color: #FFFFFF;
     font-style: normal;
     font-weight: bold;
@@ -394,7 +394,7 @@ background-color: #68A2CA;
 }
 
 .popover-child-text {
-    font-family: "PT Sans";
+    font-family: "PT Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -607,7 +607,7 @@ background-color: #68A2CA;
 }
 
 .advantage-narration {
-    font-family: "PT Sans";
+    font-family: "PT Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -617,7 +617,7 @@ background-color: #68A2CA;
 }
 
 .advantage-advice {
-    font-family: "PT Sans";
+    font-family: "PT Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -669,7 +669,7 @@ background-color: #68A2CA;
 .advantage-title {
     text-transform: uppercase;
     margin: 95px 0px 0px 0px;
-    font-family: "PT Sans";
+    font-family: "PT Sans", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
@@ -1053,7 +1053,7 @@ background-color: #68A2CA;
     margin-bottom: 13px;
     display: flex;
     align-items: flex-end;
-    font-family: "PT Sans";
+    font-family: "PT Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -1122,7 +1122,7 @@ background-color: #68A2CA;
     align-items: flex-end;
     margin-bottom: 13px;
     list-style: none;
-    font-family: "PT Sans";
+    font-family: "PT Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -1199,7 +1199,7 @@ background-color: #68A2CA;
     background-color: transparent;
     border-color: #FFFFFF;
     color: #FFFFFF;
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -1234,7 +1234,7 @@ background-color: #68A2CA;
     background-color: transparent;
     border-color: #FFFFFF;
     color: #FFFFFF;
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -1599,7 +1599,7 @@ background-color: #68A2CA;
     border-radius: 4px;
     width: 151px;
     height: 37px;
-    font-family: "Pt Sans";
+    font-family: "Pt Sans", sans-serif;
     font-weight: bold;
     font-size: 16px;
     line-height: 21px;
@@ -1631,7 +1631,7 @@ background-color: #68A2CA;
     border-radius: 4px;
     width: 160px;
     height: 37px;
-    font-family: "Pt Sans";
+    font-family: "Pt Sans", sans-serif;
     font-weight: bold;
     font-size: 16px;
     line-height: 21px;
@@ -1666,7 +1666,7 @@ background-color: #68A2CA;
     border-radius: 4px;
     padding: 15px 240px 15px 240px;
     border: none;
-    font-family: "PT Sans";
+    font-family: "PT Sans", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
