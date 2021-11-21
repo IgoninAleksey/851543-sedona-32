@@ -54,53 +54,38 @@
                 10.6 2.6 9.9 3.4C9.6 3.7 9.3 3.8 9 3.8C8.7 3.8 8.4 3.6 8.2 3.4C7.5 2.6 6.5 2.1 5.5 
                 2.1C3.7 2.1 2.2 3.6 2.2 5.4C2.1 6.3 2.5 7 2.9 7.5C2.8 7.5 2.8 7.5 2.9 7.5Z"/>
               </svg>
-              <span class="visually-hidden" id="one">Избранное</span>             
+              <span class="visually-hidden">Избранное</span>             
             </a>
-            <div class="popover popover-open">
-              <svg class="popoverarrow" width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g filter="url(#filter0_d_5_544)">
-                <path d="M10 1L20 10H0L10 1Z" fill="white"/>
-                </g>
-                <defs>
-                <filter id="filter0_d_5_544" x="0" y="0" width="20" height="10" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                <feOffset dy="-1"/>
-                <feColorMatrix type="matrix" values="0 0 0 0 0.894118 0 0 0 0 0.894118 0 0 0 0 0.894118 0 0 0 1 0"/>
-                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_5_544"/>
-                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_5_544" result="shape"/>
-                </filter>
-                </defs>
-              </svg>                
-              <div class="popover-content">
-                <ul class="popover-list">
-                  <li class="popover-item">
-                    <div class="popover-container-cart">
-                      <a class="popover-link" href="#">
-                        <img class="popover-img" src="img/desert.jpg" alt="#" width="48" height="48">
-                        <p class="popover-hotel-title">Desert Quail Inn</p>
-                        <p class="popover-housing-type">Мотель</p>
+            <div class="favorites favorites-open">        
+              <div class="favorites-content">
+                <ul class="favorites-list">
+                  <li class="favorites-item">
+                    <div class="favorites-container-cart">
+                      <a class="favorites-link" href="#">
+                        <img class="favorites-img" src="img/desert.jpg" alt="#" width="48" height="48">
+                        <p class="favorites-hotel-title">Desert Quail Inn</p>
+                        <p class="favorites-housing-type">Мотель</p>
                       </a>
-                      <button class="popover-trash">
+                      <button class="favorites-trash">
                         <span class="visually-hidden">Убрать из корзины</span>
                       </button>
                     </div>
                   </li>
-                  <li class="popover-item">
-                    <div class="popover-container-cart">
-                      <a class="popover-link" href="#">
-                        <img class="popover-img" src="img/villas.jpg" alt="#" width="48" height="48">
-                        <p class="popover-hotel-title">Villas at Poco Diablo</p>
-                        <p class="popover-housing-type">Апартаменты</p>
+                  <li class="favorites-item">
+                    <div class="favorites-container-cart">
+                      <a class="favorites-link" href="#">
+                        <img class="favorites-img" src="img/villas.jpg" alt="#" width="48" height="48">
+                        <p class="favorites-hotel-title">Villas at Poco Diablo</p>
+                        <p class="favorites-housing-type">Апартаменты</p>
                       </a>
-                      <button class="popover-trash">
+                      <button class="favorites-trash">
                         <span class="visually-hidden">Убрать из корзины</span>
                       </button>
                     </div>
                   </li>
                 </ul>
+                <button class="favorites-button">Все избранные</button>
               </div>
-              <button class="popover-button">Все избранные</button>
             </div>
           </li>
           <li class="navigation-item-user">
@@ -178,7 +163,7 @@
         <h2 class="visually-hidden">Поиск гостиниц в Седоне</h2>
         <p class="search-question">Заинтересовались?</p>
         <p class="search-date">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <a href="#" class="hotel-button">
+          <a href="#open" class="hotel-button">
             Поиск гостиницы в седоне
           </a>
       </section>
@@ -299,10 +284,10 @@
         </svg>
       </a>
     </footer>
-    <div class="modal-container modal-container-open">
+    <div class="modal-container " id="open">
       <div class="modal">
         <h2 class="modal-title">Поиск гостиницы в седоне</h2>
-        <button class="modal-exit"></button>
+        <a href="#" class="modal-exit"></a>
         <div class="modal-booking">
           <form action="https://echo.htmlacademy.ru/">
             <div class="field-group">

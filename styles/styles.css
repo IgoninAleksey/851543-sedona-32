@@ -35,7 +35,57 @@ body {
 }
 
 /* popover */
-.popover {
+.favorites {
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+    width: 30px;
+    height: 40px;
+    background-color: transparent;
+    top: 10px;
+    left: 19px;
+    transform: translateX(-50%);
+}
+
+/* .favorites-content::after {
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 40px;
+    background-color: transparent;
+    left: 190px;
+    bottom: 231px;
+    z-index: 4;
+} */
+
+.favorites-content::before {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 9px;
+    background-image: url(../img/popuparrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    left: 190px;
+    bottom: 231px;
+}
+
+.favorites:hover .favorites-content {
+    visibility: visible;
+}
+
+.favorites-catalog {
+    left: 56px;
+}
+
+.favorites-arrow {
+    position: absolute;
+    top: -10px;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.favorites-content {
     display: block;
     position: absolute;
     box-sizing: border-box;
@@ -44,48 +94,34 @@ body {
     border-top: 1px solid #E6E6E6;
     border-radius: 20px;
     background-color: #FFFFFF;
-    top: 50px;
-    left: 19px;
+    left: 9px;
+    top: 40px;
     transform: translateX(-50%);
+    visibility: hidden;
 }
 
-.popover-catalog {
-    left: 56px;
-}
-
-.popoverarrow {
-    position: absolute;
-    top: -10px;
-    left:50%;
-    transform: translateX(-50%);
-}
-
-.popover-content {
-    width: 100%;
-}
-
-.popover-list {
+.favorites-list {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.popover-item {
+.favorites-item {
     margin: 23px 0px 0px 20px;
 }
 
-.popover-item ~ .popover-item {
+.favorites-item ~ .favorites-item {
     margin: 25px 0px 0px 20px;
 }
 
-.popover-container-cart {
+.favorites-container-cart {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-right: 21px;
 }
 
-.popover-link {
+.favorites-link {
     display: grid;
     width: 300px;
     margin: 0;
@@ -97,26 +133,26 @@ body {
     padding: 0px 0px 0px 5px;
 }
 
-.popover-link:hover {
+.favorites-link:hover {
     opacity: 0.6;
 }
 
-.popover-link:focus {
+.favorites-link:focus {
     box-shadow: 0 0 0 3px #83B3D3;
     border-radius: 10px;
 }
 
-.popover-link:active {
+.favorites-link:active {
     opacity: 0.3;
 }
 
-.popover-img {
+.favorites-img {
     object-fit: cover;
     border-radius: 50%;
     grid-row: 1/3;
 }
 
-.popover-hotel-title {
+.favorites-hotel-title {
     font-family: "PT Sans", sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -124,7 +160,7 @@ body {
     margin: 0;
 }
 
-.popover-housing-type {
+.favorites-housing-type {
     font-family: "PT Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -132,7 +168,7 @@ body {
     margin: 0px 0px 5px 0px;
 }
 
-.popover-trash {
+.favorites-trash {
     width: 36px;
     height: 36px;
     border: none;
@@ -143,22 +179,22 @@ body {
     opacity: 0.6;
 }
 
-.popover-trash:hover {
+.favorites-trash:hover {
     opacity: 1;
     cursor: pointer;
 }
 
-.popover-trash:active {
+.favorites-trash:active {
     opacity: 0.3;
 }
 
-.popover-trash:focus {
+.favorites-trash:focus {
     box-shadow: 0 0 0 3px #83B3D3;
     border-radius: 10px;
     outline: none;
 }
 
-.popover-button {
+.favorites-button {
     position: absolute;
     width: 100%;
     padding: 20px 0px 20px 0px;
@@ -201,11 +237,18 @@ body {
     width: 100%;
     height: 100%;
     background-color: rgba(255, 255, 255, 0.8);
+    opacity: 0;
+    visibility: hidden;
   }
 
-/* .modal-container-open {
+  .modal-container:target {
+      opacity: 1;
+      visibility: visible;
+  }
+
+.modal-container-open {
     display: none;
-} */
+}
 
 .modal {
     position: relative;
@@ -620,6 +663,7 @@ body {
     justify-content: center;
 }
 
+
 .favorites-counter {
     display: flex;
     align-items: center;
@@ -639,6 +683,12 @@ body {
 }
 .favorites-counter:active {
     color: rgba(104, 163, 202, 0.555);
+}
+
+.navigation-link-favorites:focus {
+    box-shadow: inset 0 0 0 3px #83B3D3;
+    border-radius: 10px;
+    outline: none;
 }
 
 .navigation-link-icon:focus {
