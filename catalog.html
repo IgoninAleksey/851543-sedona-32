@@ -42,55 +42,10 @@
                   </svg>
                 <span class="visually-hidden">Поиск</span>
               </a>
-              <div class="popover popover-catalog popover-open">
-                <svg class="popoverarrow" width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g filter="url(#filter0_d_5_544)">
-                  <path d="M10 1L20 10H0L10 1Z" fill="white"/>
-                  </g>
-                  <defs>
-                  <filter id="filter0_d_5_544" x="0" y="0" width="20" height="10" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                  <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                  <feOffset dy="-1"/>
-                  <feColorMatrix type="matrix" values="0 0 0 0 0.894118 0 0 0 0 0.894118 0 0 0 0 0.894118 0 0 0 1 0"/>
-                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_5_544"/>
-                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_5_544" result="shape"/>
-                  </filter>
-                  </defs>
-                </svg>                
-                <div class="popover-content">
-                  <ul class="popover-list">
-                    <li class="popover-item">
-                      <div class="popover-container-cart">
-                        <a class="popover-link" href="#">
-                          <img class="popover-img" src="img/desert.jpg" alt="#" width="48px" height="48px">
-                          <p class="popover-hotel-title">Desert Quail Inn</p>
-                          <p class="popover-housing-type">Мотель</p>
-                        </a>
-                        <button class="popover-trash">
-                          <span class="visually-hidden">Убрать из корзины</span>
-                        </button>
-                      </div>
-                    </li>
-                    <li class="popover-item">
-                      <div class="popover-container-cart">
-                        <a class="popover-link" href="#">
-                          <img class="popover-img" src="img/villas.jpg" alt="#" width="48px" height="48px">
-                          <p class="popover-hotel-title">Villas at Poco Diablo</p>
-                          <p class="popover-housing-type">Апартаменты</p>
-                        </a>
-                        <button class="popover-trash">
-                          <span class="visually-hidden">Убрать из корзины</span>
-                        </button>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-                <button class="popover-button">Все избранные</button>
-              </div>
             </li>
             <li class="navigation-item-user">
               <a class="navigation-link-icon" href="#">
+                <span class="favorites-counter">12</span>
                 <svg class="navigation-icon" width="18" height="17" viewBox="0 0 18 17" fill="black" xmlns="http://www.w3.org/2000/svg">
                   <path d="M8.9 17C8.6 17 8.3 16.9 8.1 16.6C2.7 10.5 1.4 9.1 1.1 8.7C0.4 7.8 0 6.6 
                   0 5.4C0 2.4 2.4 0 5.5 0C6.8 0 8 0.5 9 1.3C10 0.5 11.3 0 12.5 0C15.5 0 18 2.4 18 
@@ -101,6 +56,37 @@
                 </svg>
                 <span class="visually-hidden">Избранное</span>
               </a>
+              <div class="favorites">        
+                <div class="favorites-content">
+                  <ul class="favorites-list">
+                    <li class="favorites-item">
+                      <div class="favorites-container-cart">
+                        <a class="favorites-link" href="#">
+                          <img class="favorites-img" src="img/desert.jpg" alt="#" width="48" height="48">
+                          <p class="favorites-hotel-title">Desert Quail Inn</p>
+                          <p class="favorites-housing-type">Мотель</p>
+                        </a>
+                        <button class="favorites-trash">
+                          <span class="visually-hidden">Убрать из корзины</span>
+                        </button>
+                      </div>
+                    </li>
+                    <li class="favorites-item">
+                      <div class="favorites-container-cart">
+                        <a class="favorites-link" href="#">
+                          <img class="favorites-img" src="img/villas.jpg" alt="#" width="48" height="48">
+                          <p class="favorites-hotel-title">Villas at Poco Diablo</p>
+                          <p class="favorites-housing-type">Апартаменты</p>
+                        </a>
+                        <button class="favorites-trash">
+                          <span class="visually-hidden">Убрать из корзины</span>
+                        </button>
+                      </div>
+                    </li>
+                  </ul>
+                  <button class="favorites-button">Все избранные</button>
+                </div>
+              </div>
             </li>
             <li class="navigation-item-user">
               <a class="navigation-button" href="#">Хочу сюда!</a>
@@ -358,7 +344,7 @@
               <p class="subscription-information">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
             </div>
       
-            <form class="subscription-field">
+            <form class="subscription-field" action="#">
               <input class="subscription-email" type="email"  placeholder="Ваш e-mail">
               <button class="subscription-button" type="submit">Подписаться</button>
             </form>
