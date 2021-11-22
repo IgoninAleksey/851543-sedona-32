@@ -163,9 +163,63 @@
         <h2 class="visually-hidden">Поиск гостиниц в Седоне</h2>
         <p class="search-question">Заинтересовались?</p>
         <p class="search-date">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <a href="#open" class="hotel-button">
+          <a href="#" class="hotel-button">
             Поиск гостиницы в седоне
           </a>
+          <div class="modal-container ">
+            <div class="modal">
+              <h2 class="modal-title">Поиск гостиницы в седоне</h2>
+              <a href="#" class="modal-exit"></a>
+              <div class="modal-booking">
+                <form action="https://echo.htmlacademy.ru/">
+                  <div class="field-group">
+                    <label class="notation-form" for="arrival-date">Дата заезда:</label>
+                    <input class="date-form" type="text" name="arrival-date" id="arrival-date" placeholder="27 апреля 2020">
+                    <p class="wrong">Мы не можем отправить вас в прошлое.</p>
+                    <label class="notation-form" for="departure-date">Дата выезда:</label>
+                    <input class="date-form" type="text" name="departure-date" id="departure-date" placeholder="1 сентября 2021">
+                    <p class="days-booked">На эти даты есть свободные номера. Пока есть.</p>
+                  </div>
+                  <div class="field-group-two">
+                    <label class="notation-form" for="abults">Взрослые:</label>
+                    <div class="number">
+                      <button class="minus" type="button">
+                        <svg class="plus-minus" width="13" height="13" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path  d="M0 0L0 1L13 1V0L0 0Z" />
+                        </svg>
+                      </button>
+                      <button class="plus" type="button">
+                        <svg class="plus-minus" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g>
+                            <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" />
+                          </g>
+                        </svg>
+                      </button>
+                      <input class="number-of-people" type="text" name="adults" id="abults" placeholder="2">
+                    </div>
+                    <label class="notation-form child" for="child">Дети:</label>
+                      <a class="child-info" href="#" data-info="Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно."></a>
+                    <div class="number">
+                      <button class="minus" type="button">
+                        <svg class="plus-minus" width="13" height="13" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path  d="M0 0L0 1L13 1V0L0 0Z" />
+                        </svg>
+                      </button>
+                      <button class="plus" type="button">
+                        <svg class="plus-minus" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g>
+                            <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" />
+                          </g>
+                        </svg>
+                      </button>
+                      <input class="number-of-people" type="text" name="child" id="child" placeholder="1">
+                    </div>
+                  </div>
+                  <button class="modal-button">Найти</button>
+                </form>
+              </div>
+            </div>
+          </div>
       </section>
 
       <section class="subscription">
@@ -284,60 +338,6 @@
         </svg>
       </a>
     </footer>
-    <div class="modal-container " id="open">
-      <div class="modal">
-        <h2 class="modal-title">Поиск гостиницы в седоне</h2>
-        <a href="#" class="modal-exit"></a>
-        <div class="modal-booking">
-          <form action="https://echo.htmlacademy.ru/">
-            <div class="field-group">
-              <label class="notation-form" for="arrival-date">Дата заезда:</label>
-              <input class="date-form" type="text" name="arrival-date" id="arrival-date" placeholder="27 апреля 2020">
-              <p class="wrong">Мы не можем отправить вас в прошлое.</p>
-              <label class="notation-form" for="departure-date">Дата выезда:</label>
-              <input class="date-form" type="text" name="departure-date" id="departure-date" placeholder="1 сентября 2021">
-              <p class="days-booked">На эти даты есть свободные номера. Пока есть.</p>
-            </div>
-            <div class="field-group-two">
-              <label class="notation-form" for="abults">Взрослые:</label>
-              <div class="number">
-                <button class="minus" type="button">
-                  <svg class="plus-minus" width="13" height="13" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path  d="M0 0L0 1L13 1V0L0 0Z" />
-                  </svg>
-                </button>
-                <button class="plus" type="button">
-                  <svg class="plus-minus" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g>
-                      <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" />
-                    </g>
-                  </svg>
-                </button>
-                <input class="number-of-people" type="text" name="adults" id="abults" placeholder="2">
-              </div>
-              <label class="notation-form child" for="child">Дети:</label>
-                <a class="child-info" href="#" data-info="Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно."></a>
-              <div class="number">
-                <button class="minus" type="button">
-                  <svg class="plus-minus" width="13" height="13" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path  d="M0 0L0 1L13 1V0L0 0Z" />
-                  </svg>
-                </button>
-                <button class="plus" type="button">
-                  <svg class="plus-minus" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g>
-                      <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" />
-                    </g>
-                  </svg>
-                </button>
-                <input class="number-of-people" type="text" name="child" id="child" placeholder="1">
-              </div>
-            </div>
-            <button class="modal-button">Найти</button>
-          </form>
-        </div>
-      </div>
-    </div>
     <script src="scripts/scripts.js"></script>
   </body>
 </html>
