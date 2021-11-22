@@ -418,7 +418,7 @@ body {
 
 .number {
     position: relative;
-} 
+}
 
 .minus {
     transform: translateY(50%);
@@ -533,7 +533,7 @@ body {
     position: relative;
     margin: 0 auto;
     width: 1200px;
-   
+
 }
 
 .navigation-position {
@@ -594,7 +594,7 @@ body {
     left:50%;
     transform: translateX(-50%);
 
-    
+
 
 }
 
@@ -842,7 +842,7 @@ body {
     margin: 0;
     width: 1200px;
     background-color: #83B3D3;
-    color: #FFFFFF; 
+    color: #FFFFFF;
     justify-content: space-between;
 }
 
@@ -944,7 +944,7 @@ body {
     color: #000000;
     padding: 84px 0px 95px 0px;
 }
-   
+
 
 .subscription-mailing {
     font-weight: 700;
@@ -979,7 +979,7 @@ body {
     font-size: 17px;
     line-height: 26px;
     text-transform: uppercase;
-} 
+}
 .subscription-button:hover {
     background-color: #68A2CA;
 }
@@ -1008,7 +1008,7 @@ body {
     box-shadow: inset 0 0 0 3px #83B3D3;
     outline: none;
 }
-    
+
 /*footer footer-catalog */
 
 .footer-list {
@@ -1046,7 +1046,7 @@ body {
     border-radius: 10px;
 }
 .footer-icon:active {
-    fill: rgba(104, 163, 202, 0.300); 
+    fill: rgba(104, 163, 202, 0.300);
 }
 
 .page-footer {
@@ -1265,7 +1265,7 @@ body {
     padding: 0px;
 }
 
-.radio-item { 
+.radio-item {
     position: relative;
     display: flex;
     align-items: flex-end;
@@ -1413,7 +1413,7 @@ body {
     margin-bottom: 16px;
     background-color: rgba(255, 255, 255, 0.300);
     border-radius: 2px;
-    
+
 }
 
 .toggle-range {
@@ -1648,7 +1648,7 @@ body {
     width: 100%;
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     padding: 30px 0px 30px 0px;
-    
+
 }
 
 .all-card {
